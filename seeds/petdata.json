@@ -1,0 +1,138 @@
+[
+    {
+        "breed": "Goldendoodle",
+        "age":"3",
+        "weight": "40LB",
+        "disability": "Missing Leg",
+        "location": "Connecticut"
+    },
+    {
+        "breed": "Doberman",
+        "age":"4",
+        "weight": "70LB",
+        "disability": "Hip Dysplasia",
+        "location": "New Jersey"
+    },
+    {
+        "breed": "Poodle",
+        "age":"2",
+        "weight": "20LB",
+        "disability": "Epilepsy",
+        "location": "New York"
+    },
+    {
+        "breed": "German Shepard ",
+        "age":"3",
+        "weight": "80LB",
+        "disability": "Hip Dysplasia",
+        "location": "Connecticut"
+    },
+    {
+        "breed": "Pomeranian",
+        "age":"4",
+        "weight": "8LB",
+        "disability": "Epilepsy",
+        "location": "New Jersey"
+    },
+    {
+        "breed": "Rottweiler",
+        "age":"3",
+        "weight": "90LB",
+        "disability": "Hip Dysplasia",
+        "location": "New York"
+    },    {
+        "breed": "Dachshund",
+        "age":"8",
+        "weight": "20LB",
+        "disability": "Epilepsy",
+        "location": "New Jersey"
+    },
+    {
+        "breed": "Bulldog",
+        "age":"3",
+        "weight": "60LB",
+        "disability": "Heart Disease",
+        "location": "Connecticut"
+    },
+    {
+        "breed": "Great Dane",
+        "age":"4",
+        "weight": "100LB",
+        "disability": "Missing Leg",
+        "location": "New Jersey"
+    },    {
+        "breed": "Labrador Retriever",
+        "age":"3",
+        "weight": "100LB",
+        "disability": "Hip Dysplasia",
+        "location": "Connecticut"
+    },
+    {
+        "breed": "French Bulldog",
+        "age":"7",
+        "weight": "70LB",
+        "disability": "Heart Disease",
+        "location": "New York"
+    },
+    {
+        "breed": "Goldendoodle",
+        "age":"4",
+        "weight": "40LB",
+        "disability": "Degenerative Myelopathy",
+        "location": "New Jersey"
+    },
+    {
+        "breed": "Bull Terrier",
+        "age":"6",
+        "weight": "30LB",
+        "disability": "Epilepsy",
+        "location": "Connecticut"
+    },
+    {
+        "breed": "Boston Terrier",
+        "age":"3",
+        "weight": "40LB",
+        "disability": "Missing Leg",
+        "location": "New Jersey"
+    },    {
+        "breed": "Toy Poodle",
+        "age":"4",
+        "weight": "8LB",
+        "disability": "Heart Disease",
+        "location": "New York"
+    }
+    ,    {
+        "breed": "Airedale Terrier",
+        "age":"3",
+        "weight": "40LB",
+        "disability": "Missing Leg",
+        "location": "New Jersey"
+    },    {
+        "breed": "Dalmation",
+        "age":"6",
+        "weight": "90LB",
+        "disability": "Hip Dysplasia",
+        "location": "New York"
+    },
+    {
+        "breed": "Goldendoodle",
+        "age":"3",
+        "weight": "40LB",
+        "disability": "Missing Leg",
+        "location": "New York"
+    },
+    {
+        "breed": "German Shepard",
+        "age":"4",
+        "weight": "90LB",
+        "disability": "Epilepsy",
+        "location": "Connecticut"
+    },
+    {
+        "breed": "St. Bernard",
+        "age":"6",
+        "weight": "140LB",
+        "disability": "Degenerative Myelopathy",
+        "location": "New York"
+    }
+]
