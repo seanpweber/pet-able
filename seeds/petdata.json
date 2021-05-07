@@ -4,135 +4,155 @@
         "age":"3",
         "weight": "40LB",
         "disability": "Missing Leg",
-        "location": "Connecticut"
+        "location": "Connecticut",
+        "filename": "athletic-doggo.jpeg"
     },
     {
         "breed": "Doberman",
         "age":"4",
         "weight": "70LB",
         "disability": "Hip Dysplasia",
-        "location": "New Jersey"
+        "location": "New Jersey",
+        "filename": "blind-doggo.jpeg"
     },
     {
         "breed": "Poodle",
         "age":"2",
         "weight": "20LB",
         "disability": "Epilepsy",
-        "location": "New York"
+        "location": "New York",
+        "filename": "blue-doggo.jpeg"
     },
     {
         "breed": "German Shepard ",
         "age":"3",
         "weight": "80LB",
         "disability": "Hip Dysplasia",
-        "location": "Connecticut"
+        "location": "Connecticut",
+        "filename": "distance-doggo.jpeg"
     },
     {
         "breed": "Pomeranian",
         "age":"4",
         "weight": "8LB",
         "disability": "Epilepsy",
-        "location": "New Jersey"
+        "location": "New Jersey",
+        "filename": "floppy-doggo.jpeg"
     },
     {
         "breed": "Rottweiler",
         "age":"3",
         "weight": "90LB",
         "disability": "Hip Dysplasia",
-        "location": "New York"
+        "location": "New York",
+        "filename": "funny-doggo.jpeg"
     },    {
         "breed": "Dachshund",
         "age":"8",
         "weight": "20LB",
         "disability": "Epilepsy",
-        "location": "New Jersey"
+        "location": "New Jersey",
+        "filename": "hairy-doggo.jpeg"
     },
     {
         "breed": "Bulldog",
         "age":"3",
         "weight": "60LB",
         "disability": "Heart Disease",
-        "location": "Connecticut"
+        "location": "Connecticut",
+        "filename": "menacing-doggo.jpeg"
     },
     {
         "breed": "Great Dane",
         "age":"4",
         "weight": "100LB",
         "disability": "Missing Leg",
-        "location": "New Jersey"
+        "location": "New Jersey",
+        "filename": "messy-doggo.jpeg"
     },    {
         "breed": "Labrador Retriever",
         "age":"3",
         "weight": "100LB",
         "disability": "Hip Dysplasia",
-        "location": "Connecticut"
+        "location": "Connecticut",
+        "filename": "nature-doggo.jpeg"
     },
     {
         "breed": "French Bulldog",
         "age":"7",
         "weight": "70LB",
         "disability": "Heart Disease",
-        "location": "New York"
+        "location": "New York",
+        "filename": "noble-doggo.jpeg"
     },
     {
         "breed": "Goldendoodle",
         "age":"4",
         "weight": "40LB",
         "disability": "Degenerative Myelopathy",
-        "location": "New Jersey"
+        "location": "New Jersey",
+        "filename": "nose-doggo.jpeg"
     },
     {
         "breed": "Bull Terrier",
         "age":"6",
         "weight": "30LB",
         "disability": "Epilepsy",
-        "location": "Connecticut"
+        "location": "Connecticut",
+        "filename": "pampered-doggo.jpeg"
     },
     {
         "breed": "Boston Terrier",
         "age":"3",
         "weight": "40LB",
         "disability": "Missing Leg",
-        "location": "New Jersey"
+        "location": "New Jersey",
+        "filename": "peeing-doggo.jpeg"
     },    {
         "breed": "Toy Poodle",
         "age":"4",
         "weight": "8LB",
         "disability": "Heart Disease",
-        "location": "New York"
+        "location": "New York",
+        "filename": "photogenic-doggo.jpeg"
     }
     ,    {
         "breed": "Airedale Terrier",
         "age":"3",
         "weight": "40LB",
         "disability": "Missing Leg",
-        "location": "New Jersey"
+        "location": "New Jersey",
+        "filename": "pudgy-doggo.jpeg"
     },    {
         "breed": "Dalmation",
         "age":"6",
         "weight": "90LB",
         "disability": "Hip Dysplasia",
-        "location": "New York"
+        "location": "New York",
+        "filename": "sleeping-doggo.jpeg"
     },
     {
         "breed": "Goldendoodle",
         "age":"3",
         "weight": "40LB",
         "disability": "Missing Leg",
-        "location": "New York"
+        "location": "New York",
+        "filename": "standing-doggo.jpeg"
     },
     {
         "breed": "German Shepard",
         "age":"4",
         "weight": "90LB",
         "disability": "Epilepsy",
-        "location": "Connecticut"
+        "location": "Connecticut",
+        "filename": "teeth-doggo.jpeg"
     },
     {
         "breed": "St. Bernard",
         "age":"6",
         "weight": "140LB",
         "disability": "Degenerative Myelopathy",
-        "location": "New York"
+        "location": "New York",
+        "filename": "wheel-doggo.jpeg"
     }
 ]
