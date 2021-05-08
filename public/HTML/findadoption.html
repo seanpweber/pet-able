@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="../assets/CSS/sidebar.css">
 
     <script src="../js/sidebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script>
+  var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+  console.log(template({ doesWhat: "rocks!" }));
+    </script>
 </head>
 
 <body>
@@ -68,9 +73,9 @@
 
             <aside class="menu">
                 <ul class="menu-list">
-                  <li><a>My Profile</a></li>
-                  <li><a>Find My Adoption</a></li>
-                  <li><a>My Saved Pets</a></li>
+                  <li><a href="./profile.html">My Profile</a></li>
+                  <li><a href="#">Find My Adoption</a></li>
+                  <li><a href="./savedpets.html">My Saved Pets</a></li>
                 </ul>
             </aside>
         </div>
