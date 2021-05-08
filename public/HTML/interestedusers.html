@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETable | Prospective Adoptions</title>
+
+    <link rel="stylesheet" href="../assets/bulma-0.9.2/bulma/css/bulma.css">
+</head>
+
+<body>
+
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <h1 class="title is-1">PETable</h1>
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+      
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Hi [User!]
+                </a>
+        
+                <div class="navbar-dropdown is-right">
+                    <a class="navbar-item">
+                        Pets
+                    </a>
+                    <a class="navbar-item">
+                        Shelters
+                    </a>
+                    <a class="navbar-item">
+                        Resources
+                    </a>
+                    <a class="navbar-item">
+                        About Us
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Report an issue
+                    </a>
+                </div>
+              </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="columns">
+        <div class="column is-one-third">
+            <img src="#">
+            <h3 class="title is-3">[Shelter]</h3>
+
+            <aside class="menu">
+                <ul class="menu-list">
+                  <li><a>Profile</a></li>
+                  <li><a>List a Pet</a></li>
+                  <li><a>Prospective Adoptions</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="column">
+            <div class="box">
+                <h2 class="title is-2">Submit a Pet for Adoption</h2>
+        
+                <form>
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input" type="name" placeholder="e.g. Sparky">
+                            </div>
+                        </div>
+        
+                        <div class="field">
+                            <label class="label">Breed</label>
+                            <div class="control">
+                                <input class="input" type="breed" placeholder="********">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Age</label>
+                            <div class="control">
+                                <input class="input" type="breed" placeholder="********">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Size</label>
+                            <div class="control">
+                                <input class="input" type="size" placeholder="e.g. 25 lbs">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Disability</label>
+                            <div class="control">
+                                <input class="input" type="disability" placeholder="e.g. Hiop Dysplasia">
+                            </div>
+                        </div>
+                </form>
+        
+                <button class="button is-rounded is-primary">Submit</button>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Modal title</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success">Save changes</button>
+            <button class="button">Cancel</button>
+          </footer>
+        </div>
+      </div>
+
+</body>
+
+</html>
