@@ -1,41 +1,40 @@
-const {Model, Datatypes} = require('sequelize');
+const {Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Pet extends Model {}
 
-Pet.init(
-    {
+Pet.init({
     id: {
-        type: Datatypes.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
     },
     
     breed: {
-        type: Datatypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     name: {
-        type: Datatypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     weight: {
-        type: Datatypes.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false,
     },
     disability: {
-        type: Datatypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     age: {
-        type: Datatypes.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false,
     },
     zip_code: {
-        type: Datatypes.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false,
-    }
+    },
     
     },
     {
@@ -44,7 +43,7 @@ Pet.init(
         freezeTableName: true,
         underscored: true,
         modelName: 'pets',
-      }
+    }
     );
 
 module.exports = Pet;
