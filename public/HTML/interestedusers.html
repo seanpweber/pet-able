@@ -8,6 +8,9 @@
     <title>PETable | Prospective Adoptions</title>
 
     <link rel="stylesheet" href="../assets/CSS/bulma.css">
+    <link rel="stylesheet" href="../assets/CSS/sidebar.css">
+
+    <script src="../js/sidebar.js"></script>
 </head>
 
 <body>
@@ -57,9 +60,11 @@
     </nav>
 
     <div class="columns">
-        <div class="column is-one-third">
+        <div class="sidebar column is-one-fifth" style="display: none;" id="sidebar">
             <img src="#">
             <h3 class="title is-3">[Shelter]</h3>
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times; close</a>
 
             <aside class="menu">
                 <ul class="menu-list">
@@ -71,6 +76,7 @@
         </div>
 
         <div class="column">
+            <button class="openbtn" id="openBtn" onclick="openBar()">&#9776;</button>
             <div class="box">
                 <h2 class="title is-2">Users Interested in Your Pets</h2>
 
