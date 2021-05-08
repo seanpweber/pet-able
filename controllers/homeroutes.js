@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const {Pet, User} = require('../models');
 const withAuth = require('../utils/auth');
-
 router.get('/', async (req, res) => {
     try {
         const petData = await Pet.findAll({
@@ -11,9 +10,7 @@ router.get('/', async (req, res) => {
                     attributes: ['name'],
                 },
             ],
-
         });
-
         //serialize the data
         const pets = petData.map((pet) =>pet.get({plain: true}));
         //send serialized data to the homepage template
@@ -21,13 +18,20 @@ router.get('/', async (req, res) => {
             pets,
             logged_in: req.session.logged_in
         });
-
-
     } catch (err) {
-        res.status(500).json(err);
+      res.status(500).json(err);
     }
-});
+  });
 
+  router.get('/login', (req, res) => {
+    // If the user is already logged in, redirect the request to another route
+    if (req.session.logged_in) {
+      res.redirect('/dashboard');
+      return;
+    }
+
+=======
+});
 router.get('/pet/:id', async (req,res) => {
     try {
         const petData = await Pet.findByPk(req.param.id, {
@@ -60,7 +64,6 @@ router.get('/pet/:id', async (req,res) => {
       });
   
       const pet = petData.get({ plain: true });
-
       res.render('profile', {
         ...pet,
         logged_in: true
@@ -69,7 +72,6 @@ router.get('/pet/:id', async (req,res) => {
       res.status(500).json(err);
     }
   });
-
   router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
     if (req.session.logged_in) {
@@ -79,6 +81,5 @@ router.get('/pet/:id', async (req,res) => {
   
     res.render('login');
   });
-  
 
   module.exports = router;
