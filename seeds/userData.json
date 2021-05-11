@@ -1,0 +1,9 @@
+[
+    {
+        "username": "eric",
+        "email": "eric@mail.com",
+        "password": "password123",
+        "zip_code": "90210",
+        "role_id": 1
+    }
+]

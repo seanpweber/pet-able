@@ -1,12 +1,21 @@
 const User = require('./User');
 const Pet = require('./Pet');
+const Role = require('./Role');
 
 User.hasMany(Pet, {
-    foreignKey: 'pet_id' 
+    foreignKey: 'user_id' 
 });
 
 Pet.belongsTo(User, {
-    foreignKey: 'pet_id'
+    foreignKey: 'user_id'
 });
 
-module.exports = { User, Pet };
+User.belongsTo(Role, {
+    foreignKey: 'role_id'
+})
+
+Role.hasMany(User, {
+    foreignKey: 'role_id'
+})
+
+module.exports = { User, Pet, Role };
