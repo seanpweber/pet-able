@@ -40,22 +40,13 @@ h2 {
     
 }
 .button {
-    
-    
-   
     background-image: url(../../Images/paw-01.svg);
     background-repeat: no-repeat;
     border-style: none;
     padding: 5em 5em 3em 1.75em;
     background-color: transparent;
-    /* width: 10em;
-    height: 2em;
-    border: 2px solid var(--primary-green);
-    border-radius: 26px;
-    background-color: transparent; */
     color:var(--primary-green);
-    font-weight: 500;
-    
+    font-weight: 500;  
 }
 .button:hover {
    
@@ -65,7 +56,6 @@ h2 {
     padding: 5em 5em 3em 1.75em;
     background-color: transparent;
     color:var(--bg-white);
-
 }
 .contentCard {
     padding: 3vw 10vw 3vw 10vw;
