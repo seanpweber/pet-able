@@ -36,11 +36,11 @@ User.init(
       },
     },
     zip_code: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
     },
-    is_shelter: {
-        type: DataTypes.BOOLEAN,
+    role_id: {
+        type: DataTypes.INTEGER,
         allowNull: false,
     }
 },
