@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
       return;
     }
 
-=======
+
 });
 router.get('/pet/:id', async (req,res) => {
     try {
