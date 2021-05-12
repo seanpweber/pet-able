@@ -29,6 +29,7 @@
     "handlebars": "^4.7.7",
     "jquery": "^3.6.0",
     "livereload": "^0.9.3",
+    "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.7",
     "package.json": "^2.0.1",
