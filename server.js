@@ -14,39 +14,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* app.get('/', function (req, res) {
-    res.render('home', {
-        pets: [
-            {
-                name: "Sparky",
-                breed: "Pug",
-                age: "5",
-                weight: "15",
-                disability: "Amputee",
-                location: "ASPCA"
-            }
-            {
-                name: "Max",
-                breed: "Pitbull",
-                age: "7",
-                weight: "55",
-                disability: "Deaf",
-                location: "Social-Tees"
-            }
-            {
-                name: "Gizmo",
-                breed: "Yorkshire Terrier",
-                age: "5",
-                weight: "15",
-                disability: "Hind-limb paralysis",
-                location: "ASPCA"
-            }
-        ]
-    });
-}); */
-
-app.get('/', (req, res) => {
-    res.render('petcard', {layout: 'findadopt'});
+app.use('/', (req, res) => {
+    res.render('user', {layout: 'main'});
 });
 
 app.listen(7000, () => {
