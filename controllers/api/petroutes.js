@@ -2,12 +2,12 @@ const router = require('express').Router();
 const { Pet } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.post('/', withAuth, async (req, res) => {
+router.post('/', async (req, res) => {
     try {
-      const newPet = await Pet.create({
-        ...req.body,
-        user_id: req.session.pet_id,
-      });
+      const newPet = await Pet.create(
+        req.body
+        // user_id: req.session.pet_id,
+      );
   
       res.status(200).json(newPet);
     } catch (err) {
@@ -19,15 +19,14 @@ router.post('/', withAuth, async (req, res) => {
   router.get('/pet', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
-      const userData = await User.findByPk(req.session.user_id, {
-        attributes: { exclude: ['password'] },
-        include: [{ model: Project }],
+      const petData = await User.findByPk(req.session.user_id, {
+        include: [{ model: Pet }],
       });
   
-      const user = userData.get({ plain: true });
+      const pet = petData.get({ plain: true });
   
       res.render('profile', {
-        ...user,
+        ...pet,
         logged_in: true
       });
     } catch (err) {
