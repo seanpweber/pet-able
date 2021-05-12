@@ -16,10 +16,11 @@ body {
 .loginTitle {
     color:var(--primary-green);
     text-align: center;
+
     
 }
 .loginBox {
-    margin: 5vh 15vw 8vh;
+    margin: 5vh 20% 8vh;
     background-color: var(--bg-trans-green);
     border-radius: 15px;
     border-style: none;
@@ -28,13 +29,13 @@ body {
     justify-content: center;
 }
 .oneColumn {
-    padding: 0 10vw;
+    padding: 0 6vw;
 }
 .input {
-    background: rgba(255,254,254,0.70);
+    background: rgba(255,254,254,0.50);
     border: 1px solid #FFFFFF;
     border-radius: 26px;
-    width: 50vw;
+    width: 55vw;
     height:5vh;
 }
 
@@ -70,8 +71,48 @@ body {
     color:var(--fnt-blk);
 }
 
+@media only screen and (max-width : 992px){
+    .submitBox {
+      margin: 5vh 15% 8vh;
+    }  
+    .oneColumn {
+      padding: 0 6vw;
+    }
+    .input {
+      background: rgba(255,254,254,0.70);
+      border: 1px solid #FFFFFF;
+      border-radius: 26px;
+      width: 70vw;
+      height:5vh;
+  }
+  }
 @media only screen and (max-width : 768px){
-  .loginBox {
-    margin: 5vh 15vw 8vh;
+    .submitBox {
+      margin: 5vh 10% 8vh;
+    }  
+    .oneColumn {
+      padding: 0 6vw;
+    }
+    .input {
+      background: rgba(255,254,254,0.70);
+      border: 1px solid #FFFFFF;
+      border-radius: 26px;
+      width: 65vw;
+      height:5vh;
+  }
+  }
+@media only screen and (max-width : 576px){
+  .submitBox {
+    margin: 5vh 8% 8vh;
   }  
+  .oneColumn {
+    padding: 0 4vw;
+  }
+  .input {
+    background: rgba(255,254,254,0.70);
+    border: 1px solid #FFFFFF;
+    border-radius: 26px;
+    width: 80vw;
+    height:5vh;
+}
 }

@@ -23,7 +23,7 @@ body {
     margin-right:3em;
 } */
 .signupBox {
-    margin: 5vh 15vw 8vh;
+    margin: 5vh 25% 8vh;
     background-color: var(--bg-trans-green);
     border-radius: 15px;
     border-style: none;

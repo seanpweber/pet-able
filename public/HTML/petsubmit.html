@@ -19,7 +19,7 @@
     <nav class="navbar is-light" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="../../index.html">
-            <h1 class="title is-1">PETable</h1>
+            <h1 class="title is-3">PETable</h1>
           </a>
       
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -61,11 +61,11 @@
     </nav>
 
     <div class="columns">
-        <div class="sidebar column is-one-fifth" style="display: none;" id="sidebar">
-            <img src="#">
+        <div class="sidebar column is-one-quarter" style="display: none;" id="sidebar">
+            <img class="shelterIcon" src="../assets/Images/shelter_icon-04.svg" alt="shelter icon">
             <h3 class="title is-3">[Shelter]</h3>
 
-            <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times; close</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times; </a>
 
             <aside class="menu">
                 <ul class="menu-list">
@@ -78,10 +78,10 @@
 
         <div class="column">
             <button class="openbtn" id="openBtn" onclick="openBar()">&#9776;</button>
-            <div class="box">
-                <h2 class="title is-2">Submit a Pet for Adoption</h2>
-        
-                <form>
+            
+            <div class="submitBox box">
+                <h2 class="submitTitle title is-2">Submit a Pet for Adoption</h2>
+                <form class="oneColumn">
                         <div class="field">
                             <label class="label">Name</label>
                             <div class="control">
@@ -118,8 +118,9 @@
                         </div>
                 </form>
         
-                <button class="button is-rounded is-primary">Submit</button>
+                <button class="button">Submit</button>
         </div>
+    
     </div>
 </body>
 
