@@ -1,0 +1,19 @@
+<div class="sidebar column is-one-fifth" style="display: none;" id="sidebar">
+    <img src="#">
+    <h3 class="title is-3">[User]</h3>
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times; close</a>
+
+    <aside class="menu">
+        <ul class="menu-list">
+            {{!-- {{#if user.role_id user}} --}}
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Find My Adoption</a></li>
+                <li><a href="#">My Saved Pets</a></li>
+            {{!-- {{#else user.role_id shelter}} --}}
+                <li><a href="#">Profile</a></li>
+                <li><a href="../../public/HTML/petsubmit.html">List a Pet</a></li>
+                <li><a href="#">Interested Users</a></li>
+        </ul>
+    </aside>
+</div>

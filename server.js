@@ -17,8 +17,9 @@ app.use(route)
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-    res.render('petcard', {layout: 'findadopt'});
+
+app.use('/', (req, res) => {
+    res.render('user', {layout: 'main'});
 });
 
 app.listen(7000, () => {
