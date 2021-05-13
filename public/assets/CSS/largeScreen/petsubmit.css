@@ -1,0 +1,138 @@
+:root{
+    --bg-white:#FEFEFE;
+    --bg-trans-green: rgba(39, 168, 118, 0.3);
+    --primary-green:#27A876;
+    --fnt-blk:#0F0F0F;
+    --navbar-grey:#E3E3E3;
+}
+
+#sidebar {
+    background-image: url(../../Images/bg03.png);
+    background-repeat: no-repeat;
+    background-size: 38vh;
+    background-position: bottom;
+            
+}
+
+.shelterIcon {
+    width: 35%;
+    margin-left: 7vw;
+
+}
+h3 {
+    text-align: center;
+    
+  }
+
+
+body {
+    padding-bottom: 25vh;
+    background-color: var(--bg-white);
+    background-image: url(../../Images/bg02.png);
+    background-repeat: no-repeat;
+    background-size: 70vh;
+    background-position: bottom;
+ }
+.submitTitle {
+    color:var(--primary-green);
+    text-align: center;
+    
+}
+.submitBox {
+    margin: 5vh 20% 8vh;
+    background-color: var(--bg-trans-green);
+    border-radius: 15px;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.oneColumn {
+    padding: 0 6vw;
+}
+.input {
+    background: rgba(255,254,254,0.70);
+    border: 1px solid #FFFFFF;
+    border-radius: 26px;
+    width: 55vw;
+    height:5vh;
+}
+
+.button {
+    background-image: url(../../Images/paw-01.svg);
+    background-repeat: no-repeat;
+    border-style: none;
+    background-position: center;
+    padding:4.5em 4em 3em;
+    background-color: transparent;
+    color:var(--primary-green);
+    font-weight: 500;  
+    margin-top: 1.5em;
+}
+.button:hover { 
+    background-image: url(../../Images/paw-02.svg);
+    background-repeat: no-repeat;
+    border-style: none;
+    background-position: center;
+    padding:4.5em 4em 3em;
+    background-color: transparent;
+    color:var(--bg-white);
+    margin-top: 1.5em;
+}
+.content {
+    text-align: center;
+}
+.createAccountLink {
+    color: var(--primary-green);
+}
+.label {
+    font-weight: 500;
+    color:var(--fnt-blk);
+}
+@media only screen and (max-width : 992px){
+    .submitBox {
+      margin: 5vh 15% 8vh;
+    }  
+    .oneColumn {
+      padding: 0 6vw;
+    }
+    .input {
+      background: rgba(255,254,254,0.70);
+      border: 1px solid #FFFFFF;
+      border-radius: 26px;
+      width: 70vw;
+      height:5vh;
+  }
+  }
+@media only screen and (max-width : 768px){
+    .submitBox {
+      margin: 5vh 10% 8vh;
+    }  
+    .oneColumn {
+      padding: 0 6vw;
+    }
+    .input {
+      background: rgba(255,254,254,0.70);
+      border: 1px solid #FFFFFF;
+      border-radius: 26px;
+      width: 65vw;
+      height:5vh;
+  }
+  }
+@media only screen and (max-width : 576px){
+  .submitBox {
+    margin: 5vh 8% 8vh;
+  }  
+  .oneColumn {
+    padding: 0 4vw;
+  }
+  .input {
+    background: rgba(255,254,254,0.70);
+    border: 1px solid #FFFFFF;
+    border-radius: 26px;
+    width: 80vw;
+    height:5vh;
+}
+}
+
+
