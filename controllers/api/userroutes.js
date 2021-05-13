@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.get('/profile', withAuth, async (req, res) => {
     try {
@@ -38,6 +39,24 @@ router.get('/profile', withAuth, async (req, res) => {
       res.status(500).json(err);
     }
   });
+
+router.post('/', async (req, res) => {
+  try {
+    console.log("this is the session", req.session)
+    console.log(req.body.parse)
+    const newUser = await User.create(
+      req.body
+      // user_id: req.session.user_id,
+    );
+
+    res.status(200).json(newUser);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+
+
 
 router.post('/login', async (req, res) => {
     try {
