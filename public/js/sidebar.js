@@ -1,4 +1,3 @@
-
 function openBar() {
     document.getElementById("sidebar").style.display = "block";
   }
