@@ -16,7 +16,7 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    username: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -37,11 +37,11 @@ User.init(
     },
     zip_code: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
     role_id: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
     }
 },
 {

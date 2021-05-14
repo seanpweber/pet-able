@@ -22,7 +22,6 @@
     "bcrypt": "^5.0.1",
     "bulma-start": "0.0.4",
     "connect-session-sequelize": "^7.1.1",
-    "dotenv": "^9.0.2",
     "dotenv": "^9.0.0",
     "ejs": "^3.1.6",
     "dotenv": "^9.0.2",

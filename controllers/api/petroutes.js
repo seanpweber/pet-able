@@ -26,12 +26,6 @@ router.post('/', async (req, res) => {
               ],
             });
         
-            const pet = petData.get({ plain: true });
-        
-            res.render('pet', {
-              ...pet,
-              logged_in: req.session.logged_in
-            });
           } catch (err) {
             res.status(500).json(err);
           }
@@ -46,11 +40,6 @@ router.post('/', async (req, res) => {
         include: [{ model: Project }],
       });
   
-      const pet = petData.get({ plain: true });
-      res.render('profile', {
-        ...pet,
-        logged_in: true
-      });
     } catch (err) {
       res.status(500).json(err);
     }
@@ -64,12 +53,6 @@ router.post('/', async (req, res) => {
         include: [{ model: Pet }],
       });
   
-      const pet = petData.get({ plain: true });
-  
-      res.render('profile', {
-        ...pet,
-        logged_in: true
-      });
     } catch (err) {
       res.status(500).json(err);
     }

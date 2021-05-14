@@ -1,13 +1,13 @@
 [
     {
-        "username": "eric",
+        "name": "eric",
         "email": "eric@mail.com",
         "password": "password123",
         "zip_code": "90210",
         "role_id": 1
     },
     {
-        "username": "bob",
+        "name": "bob",
         "email": "bob@mail.com",
         "password": "password123",
         "zip_code": "90210",

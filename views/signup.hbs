@@ -1,4 +1,4 @@
-{{>header}}
+{{!-- {{>header}} --}}
 
     <div class="container">
         <!-- <h1 class="title is-1">PETable</h1> -->
@@ -7,19 +7,19 @@
     <div class="signupBox box">
         <h2 class="signupTitle title is-2">Create Your Account</h2>
 
-        <form class="oneColumn">
+        <form class="signup-form">
             
-                <div class="field">
-                    <label class="label">Username</label>
+                <div class="field" >
+                    <label class="label">Name</label>
                     <div class="control">
-                    <input class="input" type="username" placeholder="e.g. firstname.lastname">
+                    <input class="input" id="name-login" type="username" placeholder="e.g. firstname.lastname">
                     </div>
                 </div>
 
                   <div class="field">
                     <label class="label">Password</label>
                     <div class="control">
-                      <input class="input" type="password" placeholder="********">
+                      <input class="input" id="password-login" type="password" placeholder="********">
                     </div>
                   </div>
 
@@ -30,19 +30,18 @@
                     </div>
                   </div>
             
-
             
-              <div class="field">
+              <div class="field" >
                 <label class="label">Email Address</label>
                 <div class="control">
-                  <input class="input" type="email" placeholder="email@gmail.com">
+                  <input class="input" id="email-login" type="email" placeholder="email@gmail.com">
                 </div>
               </div>
 
               <div class="field">
                 <label class="label">Zip Code</label>
                 <div class="control">
-                  <input class="input" type="password" placeholder="*****">
+                  <input class="input" placeholder="10010">
                 </div>
               </div>
 
@@ -53,7 +52,9 @@
             
         </form>
 
-        <button class="button ">Sign Up</button>
+        <button class="button" id="signUpUser">Sign Up</button>
 
-        <div class="content">Already a member? <a href="./login.html"><strong class="loginLink">Log in</strong></a></div>
+        <div class="content">Already a member? <a href="/login"><strong class="loginLink">Log in</strong></a></div>
     </div>
+
+    <script src="/js/signup.js"></script>

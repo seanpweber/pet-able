@@ -1,9 +1,11 @@
 const createAccount = async(event) => {
     event.preventDefault();
+    console.log("testing")
     const name = document.querySelector("#name-login").value.trim();
     const email = document.querySelector("#email-login").value.trim();
     const password = document.querySelector("#password-login").value.trim();
-    if (username && email && password){
+    console.log(name, email, password)
+    if (name && email && password){
         const response = await fetch("/api/user/", {
             method: "POST",
             body: JSON.stringify({ name, email, password }),
@@ -16,4 +18,4 @@ const createAccount = async(event) => {
         }
     }
 };
-document.querySelector(".signup-form").addEventListener("submit", createAccount);
+document.querySelector("#signUpUser").addEventListener("click", createAccount);

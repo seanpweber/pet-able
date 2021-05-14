@@ -2,6 +2,20 @@ const router = require('express').Router();
 const { User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+
+router.get("/:id", async (req, res) => {
+  try {
+    const rawUserData = await User.findByPk(req.params.id);
+    if (!rawUserData) {
+      res.status(404).json({ message: "No user found with this id!" });
+      return;
+    }
+    res.status(200).json(rawUserData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/profile', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
@@ -10,12 +24,6 @@ router.get('/profile', withAuth, async (req, res) => {
         include: [{ model: User }],
       });
   
-      const user = userData.get({ plain: true });
-  
-      res.render('profile', {
-        ...user,
-        logged_in: true
-      });
     } catch (err) {
       res.status(500).json(err);
     }
@@ -29,31 +37,48 @@ router.get('/profile', withAuth, async (req, res) => {
         include: [{ model: Project }],
       });
   
-      const user = userData.get({ plain: true });
-  
-      res.render('profile', {
-        ...user,
-        logged_in: true
-      });
+
     } catch (err) {
       res.status(500).json(err);
     }
   });
 
-router.post('/', async (req, res) => {
-  try {
-    console.log("this is the session", req.session)
-    console.log(req.body.parse)
-    const newUser = await User.create(
-      req.body
-      // user_id: req.session.user_id,
-    );
-
-    res.status(200).json(newUser);
-  } catch (err) {
-    res.status(400).json(err);
-  }
+  router.post("/", async (req, res) => {
+    console.log(req.body)
+    try {
+        const newUserData = await User.create({
+            name: req.body.name,
+            email: req.body.email,
+            password: req.body.password,
+            zip_code: req.body.zip_code
+        });
+        req.session.save(() => {
+            req.session.loggedIn = true;
+            res.status(200).json(newUserData);
+        });
+    } catch (err) {
+      console.log(err)
+        res.status(500).json(err);
+    }
 });
+
+
+
+
+// router.post('/', async (req, res) => {
+//   try {
+//     console.log("this is the session", req.session)
+//     console.log(req.body.parse)
+//     const newUser = await User.create(
+//       req.body
+//       // user_id: req.session.user_id,
+//     );
+
+//     res.status(200).json(newUser);
+//   } catch (err) {
+//     res.status(400).json(err);
+//   }
+// });
 
 
 

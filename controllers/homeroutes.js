@@ -2,9 +2,9 @@ const router = require('express').Router();
 const {Pet, User} = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
-  res.render('user', {layout: 'main'});
-})
+// router.get('/', async (req, res) => {
+//   res.render('user', {layout: 'main'});
+// })
 
 router.get("/profile/:id", withAuth, async (req, res) => {
   try {
