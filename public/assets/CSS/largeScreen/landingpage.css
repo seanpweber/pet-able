@@ -4,8 +4,6 @@
     --primary-green:#27A876;
     --fnt-blk:#0F0F0F;
     --navbar-grey:#E3E3E3;
-
-
 }
 body {
     background-color: var(--bg-white);

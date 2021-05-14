@@ -1,0 +1,31 @@
+:root{
+    --bg-white:#FEFEFE;
+    --bg-trans-green: rgba(39, 168, 118, 0.3);
+    --primary-green:#27A876;
+    --fnt-blk:#0F0F0F;
+    --navbar-grey:#E3E3E3;
+}
+body {
+    background-color: var(--bg-white);
+ }
+
+#sidebar {
+    background-image: url(../../Images/bg03.png);
+    background-repeat: no-repeat;
+    background-size: 38vh;
+    background-position: bottom;
+            
+}
+
+.userIcon {
+    width: 35%;
+    margin-left: 7vw;
+
+}
+
+h3 {
+    text-align: center;
+   
+  }
+
+

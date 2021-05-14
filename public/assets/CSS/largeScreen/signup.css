@@ -23,7 +23,7 @@ body {
     margin-right:3em;
 } */
 .signupBox {
-    margin: 5vh 15vw 8vh;
+    margin: 5vh 20% 8vh;
     background-color: var(--bg-trans-green);
     border-radius: 15px;
     border-style: none;
@@ -31,17 +31,14 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.firstColumn {
-    padding: 12px 12px 12px 12px;
-}
-.secondColumn {
-    padding: 12px 12px 12px 12px;
+.oneColumn {
+    padding: 0 6vw;
 }
 .input {
     background: rgba(255,254,254,0.70);
     border: 1px solid #ffffff;
     border-radius: 26px;
-    width: 30vw;
+    width: 55vw;
     height:5vh;
 }
 
@@ -80,20 +77,48 @@ body {
     margin-top: 28px;
     margin-right:15px;
 }
+@media only screen and (max-width : 992px){
+    .signupBox {
+      margin: 5vh 15% 8vh;
+    }  
+    .oneColumn {
+      padding: 0 6vw;
+    }
+    .input {
+      background: rgba(255,254,254,0.70);
+      border: 1px solid #FFFFFF;
+      border-radius: 26px;
+      width: 70vw;
+      height:5vh;
+  }
+  }
 @media only screen and (max-width : 768px){
-  .loginBox {
-    margin: 5vh 15vw 8vh;
+    .signupBox {
+      margin: 5vh 10% 8vh;
+    }  
+    .oneColumn {
+      padding: 0 6vw;
+    }
+    .input {
+      background: rgba(255,254,254,0.70);
+      border: 1px solid #FFFFFF;
+      border-radius: 26px;
+      width: 65vw;
+      height:5vh;
+  }
+  }
+@media only screen and (max-width : 576px){
+  .signupBox {
+    margin: 5vh 8% 8vh;
   }  
-  .firstColumn,
-  .secondColumn {
-      padding: 12px 10vw;
+  .oneColumn {
+    padding: 0 4vw;
   }
-  .secondColumn {
-      padding-top: 0;
-  }
-
   .input {
-    width: 50vw;
+    background: rgba(255,254,254,0.70);
+    border: 1px solid #FFFFFF;
+    border-radius: 26px;
+    width: 80vw;
     height:5vh;
-  }
+}
 }
