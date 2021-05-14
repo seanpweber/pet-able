@@ -1,85 +1,96 @@
 const router = require('express').Router();
 const {Pet, User} = require('../models');
 const withAuth = require('../utils/auth');
+
 router.get('/', async (req, res) => {
-    try {
-        const petData = await Pet.findAll({
-            include: [
-                {
-                    model: User,
-                    attributes: ['name'],
-                },
-            ],
-        });
-        //serialize the data
-        const pets = petData.map((pet) =>pet.get({plain: true}));
-        //send serialized data to the homepage template
-        res.render('homepage', {
-            pets,
-            logged_in: req.session.logged_in
-        });
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
+  res.render('user', {layout: 'main'});
+})
 
-  router.get('/login', (req, res) => {
-    // If the user is already logged in, redirect the request to another route
-    if (req.session.logged_in) {
-      res.redirect('/dashboard');
-      return;
-    }
-
-
+router.get("/profile/:id", withAuth, async (req, res) => {
+  try {
+      const userProfile = await User.findByPk(req.params.id, {
+          include:
+              { model: User,  attributes: ['username', 'email', 'zip_code'],}
+      });
+      const userDisplay = userProfile.get({ plain:true });
+      console.log(userDisplay)
+      res.status(200).render('profile', {
+          userDisplay,
+          logged_in: req.session.logged_in,
+          userId: req.session.user_id
+      })
+  } catch (err) {
+      res.status(400).json("Page not found!");
+  }
 });
-router.get('/pet/:id', async (req,res) => {
-    try {
-        const petData = await Pet.findByPk(req.param.id, {
-            include: [
-                {
-                  model: Pet,
-                  attributes: ['name'],
-                },
-              ],
-            });
+
+// router.get('/profile/:id', async (req, res) => {
+//   const userDisplay = await User.findByPk({
+//     include: [
+//       {
+//         model: User,
+//         attributes: ['name', 'email', 'zip_code'],
+//       },
+      
+//     ],
+//   });
+
+
+//   const pet = petData.get({ plain: true });
         
-            const pet = petData.get({ plain: true });
-        
-            res.render('pet', {
-              ...pet,
-              logged_in: req.session.logged_in
-            });
-          } catch (err) {
-            res.status(500).json(err);
-          }
-        });
-        
-        // Use withAuth middleware to prevent access to route
-        router.get('/profile', withAuth, async (req, res) => {
-            try {
-                    // Find the logged in user based on the session ID
-    const petData = await Pet.findByPk(req.session.user_id, {
-        attributes: { exclude: ['password'] },
-        include: [{ model: Project }],
-      });
-  
-      const pet = petData.get({ plain: true });
-      res.render('profile', {
-        ...pet,
-        logged_in: true
-      });
-    } catch (err) {
+//   res.render('pet', {
+//     ...pet,
+//     logged_in: req.session.logged_in
+//   });
+
+//   res.render('profile');
+// })
+
+
+// router.get('/', async (req, res) => {
+//     try {
+//         const petData = await Pet.findAll({
+//             include: [
+//                 {
+//                     model: User,
+//                     attributes: ['name'],
+//                 },
+//             ],
+//         });
+//         //serialize the data
+//         const pets = petData.map((pet) =>pet.get({plain: true}));
+//         //send serialized data to the homepage template
+//         res.render('homepage', {
+//             pets,
+//             logged_in: req.session.logged_in
+//         });
+//     } catch (err) {
+//       res.status(500).json(err);
+//     }
+//   });
+
+router.get("/login", async (req, res) => {
+  try {
+      res.status(200).render("login");
+  } catch (err) {
+      res.status(400).json(err);
+  }
+});
+// This is a placeholder, and will need the create account page.
+router.get("/signup", async (req, res) => {
+  try {
+      res.status(200).render("signup");
+  } catch (err) {
       res.status(500).json(err);
-    }
-  });
-  router.get('/login', (req, res) => {
-    // If the user is already logged in, redirect the request to another route
-    if (req.session.logged_in) {
-      res.redirect('/dashboard');
-      return;
-    }
-  
-    res.render('login');
-  });
+  }
+})
+// This is a placeholder, and will need the logout page to be rendered.
+router.get("/logout", async (req, res) => {
+  try {
+      res.status(200).render("logout");
+  } catch (err) {
+      res.status(500).json(err);
+  }
+})
 
   module.exports = router;
