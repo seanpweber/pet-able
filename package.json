@@ -22,12 +22,12 @@
     "bcrypt": "^5.0.1",
     "bulma-start": "0.0.4",
     "connect-session-sequelize": "^7.1.1",
-<<<<<<< HEAD
     "dotenv": "^9.0.2",
-=======
     "dotenv": "^9.0.0",
     "ejs": "^3.1.6",
->>>>>>> 2e3dccf2fbde32f937e94b86240a7cfe92b3e66f
+    "dotenv": "^9.0.2",
+    "dotenv": "^9.0.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
     "express-session": "^1.17.1",
