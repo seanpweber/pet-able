@@ -12,7 +12,7 @@ const createAccount = async(event) => {
             headers: { "Content-Type": "application/json" }
         });
         if (response.ok) {
-            document.location.replace("/");
+            document.location.replace("/home");
         } else {
             alert("Failed to create account.");
         }
