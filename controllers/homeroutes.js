@@ -1,10 +1,21 @@
 const router = require('express').Router();
 const {Pet, User} = require('../models');
 const withAuth = require('../utils/auth');
+const path = require("path");
+const { render } = require('ejs');
 
-// router.get('/', async (req, res) => {
-//   res.render('user', {layout: 'main'});
-// })
+router.get('/', async (req, res) => {
+  res.sendFile(path.join(__dirname, "../index.html"))
+  // res.render('user', {layout: 'main'});
+})
+
+router.get('/home', async (req, res) => {
+  const petData = await Pet.findAll({})
+  const petArr = petData.map(pet => pet.get({plain: true}))
+  res.render('user', {
+    pets: petArr
+  })
+})
 
 router.get("/profile/:id", withAuth, async (req, res) => {
   try {

@@ -41,9 +41,11 @@ app.use('/', (req, res) => {
     res.render('user', {layout: 'main'});
 });
 
-app.listen(7000, () => {
+sequelize.sync({force: false}).then(() => {
+    app.listen(7000, () => {
     console.log('The web server has started on port 7000');
-});
+})
+})
 
 
 
