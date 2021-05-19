@@ -42,7 +42,7 @@ app.use('/', (req, res) => {
 });
 
 sequelize.sync({force: false}).then(() => {
-    app.listen(7000, () => {
+    app.listen(PORT, () => {
     console.log('The web server has started on port 7000');
 })
 })
