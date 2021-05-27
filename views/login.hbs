@@ -7,23 +7,26 @@
     <div class="loginBox box">
         <h2 class="loginTitle title is-2">Log In</h2>
 
-        <form class="oneColumn">
+        <form class="login-form oneColumn">
                 <div class="field">
                     <label class="label">Username or Email</label>
                     <div class="control">
-                        <input class="input" type="username" placeholder="">
+                        <input class="input" id="email-login" type="username" placeholder="">
                     </div>
                 </div>
 
                 <div class="field">
                     <label class="label">Password</label>
                     <div class="control">
-                        <input class="input" type="password" placeholder="********">
+                        <input class="input" id="password-login" type="password" placeholder="********">
                     </div>
                 </div>
+                <div class="signInButton">
+                <button class="button " id="sign-in-button">Sign In</button>    
+                </div>    
         </form>
-
-        <button class="button ">Sign In</button>
+       
+        
 
         <div class="content">Not a member? <a href="/signup"><strong class="createAccountLink">Create an account</strong></a></div>
     </div>
