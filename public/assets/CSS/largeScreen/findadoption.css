@@ -12,8 +12,10 @@ body {
 #sidebar {
     background-image: url(../../Images/bg03.png);
     background-repeat: no-repeat;
-    background-size: 38vh;
+    background-size: 40vh;
     background-position: bottom;
+    background-color: #F4F4F4;
+   
             
 }
 
@@ -28,4 +30,57 @@ h3 {
    
   }
 
+.card {
+    background-color: var(--bg-trans-green);
+    border-radius: 15px;
+    border-style: none;
+    
+   margin:2em 8em 2em 25em;
+   
+   
+}
+.card:hover {
+    background-color: var(--primary-green);
+    color: var(--bg-white);
 
+}
+.media-content{
+    display: flex;
+  
+    justify-content: left;
+}
+
+li{
+    list-style-type: none;
+    text-align: left;
+}
+
+.content ul{
+    margin-left: 0em;
+    margin-top:3em;
+}
+
+.image{
+    padding-left: 0.8em;
+    width: 80%;
+    
+}
+@media only screen and (max-width : 992px){
+    .content ul{
+        margin-top: 0em;
+       
+    }
+}
+@media only screen and (max-width : 768px){
+    .content ul{
+        margin-top: 0em;
+    }
+    .card{
+        margin:2em 4em;
+    }
+    .image{
+        padding-left: 0.8em;
+        width: 80%;
+        
+    }
+}

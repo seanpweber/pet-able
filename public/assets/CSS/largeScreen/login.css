@@ -49,6 +49,13 @@ body {
     color:var(--primary-green);
     font-weight: 500;  
     margin-top: 1.5em;
+    
+}
+
+.signInButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .button:hover { 
     background-image: url(../../Images/paw-02.svg);
@@ -66,10 +73,20 @@ body {
 .createAccountLink {
     color: var(--primary-green);
 }
+.createAccountLink:hover{
+    color: var(--bg-white);
+}
 .label {
     font-weight: 500;
     color:var(--fnt-blk);
 }
+.navbar {
+  background-color: var(--primary-green);
+  color: var(--bg-white);
+}
+/* h1 {
+  color: var(--bg-white);
+} */
 
 @media only screen and (max-width : 992px){
     .submitBox {
