@@ -1,5 +1,7 @@
 # PetABLE  
 
+![picture](client/punlic/images/petable.png)
+
  ## Description
 
  PetABLE is a business that specializes in sharing the love with our petable fury friends. The mission of this project is to provide a platform for users and shelters to not only post and share disabled pets for adoption, but also a place for those people who want to adopt a pet with a disability. This project was constructed using Javascript, HTML, CSS, Node, SQL, Bulma and Express.
@@ -34,8 +36,8 @@
  ## Additional Information
 
  **Link to Github Repository:**
-https://github.com/ksboyer17/pet-able -
-[GitHub](https://github.com/ksboyer17/pet-able)
+https://github.com/seanpweber/pet-able -
+[GitHub](https://github.com/seanpweber/pet-able)
 
 ![](https://cunycfsfpt012-cls3656.slack.com/files/U01KDAXL9HS/F021CHRN64C/project2-_mockup-prototype101.mov)
 
