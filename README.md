@@ -1,6 +1,6 @@
 # PetABLE  
 
-![picture](client/punlic/images/petable.png)
+![picture](client/public/images/petable.png)
 
  ## Description
 
