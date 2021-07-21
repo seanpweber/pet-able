@@ -1,6 +1,6 @@
 # PetABLE  
 
-![picture](client/public/images/petable.png)
+![picture](public/images/petable.png)
 
  ## Description
 
